@@ -1,3 +1,6 @@
+
+
+// define  api this is the apiKey
 const apiKey = '7cb6a5587da4c9b0ae81c46ae79b0caa'; 
 
 function getWeather() {
@@ -8,7 +11,7 @@ function getWeather() {
     result.innerHTML = 'Please enter a city name';
     return;
   }
-
+// api 
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   fetch(apiUrl)
@@ -35,4 +38,5 @@ function getWeather() {
       result.innerHTML = error.message;
     });
 }
+
 
